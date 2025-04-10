@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Repair Shop - Your Digital Solution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo" >TV<span>Repair</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="service.html" >Services</a></li>
+                    <li><a href="appoint.html" >Book Appointment</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+ <!-- About Page -->
+ <section class="page" id="about-page">
+    <div class="container">
+        <h2>Welcome to Our Digital Solution</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <picture>
+                    <!-- Different images for different screen sizes -->
+                    <source media="(max-width: 576px)" srcset="/img/about756.jpg">
+                    <source media="(max-width: 768px)" srcset="/img/about768.jpg">
+                    <img src="/img/aboutimg.jpg" 
+                         alt="TV Repair Technician working on television">
+                </picture>
+            </div>
+            <div class="about-text">
+                <h2>Before & After</h2>
+                <p>We've transformed the TV repair experience with our new digital platform. Gone are the days of cluttered interfaces and confusing processes.</p>
+                <p>Now enjoy a clean, intuitive experience with improved navigation and clear calls-to-action that enhance user engagement.</p>
+                <p>Our online booking system reduces booking time by 60%, getting you the service you need faster than ever before.</p>
+                <a href="#" class="btn" data-page="services">Our Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>TV Repair</h3>
+                    <p>Your trusted solution for all TV repair needs. Fast, reliable, and affordable service with a 95% customer satisfaction rate.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="about">About</a></li>
+                        <li><a href="#" data-page="services">Services</a></li>
+                        <li><a href="#" data-page="appointment">Book Appointment</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="services">Screen Repair</a></li>
+                        <li><a href="#" data-page="services">Power Supply</a></li>
+                        <li><a href="#" data-page="services">Motherboard Repair</a></li>
+                        <li><a href="#" data-page="services">Sound Issues</a></li>
+                        <li><a href="#" data-page="services">Smart TV Software</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, SF</li>
+                        <li><i class="fas fa-phone-alt"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@tvrepaired.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TV Repair Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

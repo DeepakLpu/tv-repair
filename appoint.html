@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Repair Shop - Your Digital Solution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo" >TV<span>Repair</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="service.html" >Services</a></li>
+                    <li><a href="appoint.html" >Book Appointment</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- Appointment Page -->
+<section class="page" id="appointment-page">
+    <div class="container">
+        <h2>Book Your Appointment</h2>
+        <p class="text-center">Schedule your TV repair service with our easy online booking</p>
+        
+        <form id="appointmentForm" class="appointment-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="appointment-name">Full Name</label>
+                    <input type="text" id="appointment-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-email">Email</label>
+                    <input type="email" id="appointment-email" name="email" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="appointment-phone">Phone Number</label>
+                    <input type="tel" id="appointment-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-tv-model">TV Model</label>
+                    <input type="text" id="appointment-tv-model" name="tv_model" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="appointment-service">Service Needed</label>
+                    <select id="appointment-service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="screen-repair">Screen Repair</option>
+                        <option value="power-supply">Power Supply</option>
+                        <option value="motherboard">Motherboard Repair</option>
+                        <option value="sound-issues">Sound Issues</option>
+                        <option value="smart-tv">Smart TV Software</option>
+                        <option value="diagnostic">Diagnostic Only</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-type">Service Type</label>
+                    <select id="appointment-type" name="service_type" required>
+                        <option value="">Select service type</option>
+                        <option value="in-shop">In-Shop Repair</option>
+                        <option value="on-site">On-Site Repair</option>
+                        <option value="pickup">Pickup & Delivery</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="appointment-date">Preferred Date</label>
+                    <input type="date" id="appointment-date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Preferred Time</label>
+                    <input type="time" id="appointment-time" name="time" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="appointment-issue">Describe the Issue</label>
+                <textarea id="appointment-issue" name="issue" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="appointment-address" class="address-label">Service Address (if on-site)</label>
+                <input type="text" id="appointment-address" name="address">
+            </div>
+            
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>TV Repair</h3>
+                    <p>Your trusted solution for all TV repair needs. Fast, reliable, and affordable service with a 95% customer satisfaction rate.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="about">About</a></li>
+                        <li><a href="#" data-page="services">Services</a></li>
+                        <li><a href="#" data-page="appointment">Book Appointment</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="services">Screen Repair</a></li>
+                        <li><a href="#" data-page="services">Power Supply</a></li>
+                        <li><a href="#" data-page="services">Motherboard Repair</a></li>
+                        <li><a href="#" data-page="services">Sound Issues</a></li>
+                        <li><a href="#" data-page="services">Smart TV Software</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, SF</li>
+                        <li><i class="fas fa-phone-alt"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@tvrepaired.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TV Repair Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
