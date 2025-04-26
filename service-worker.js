@@ -12,7 +12,9 @@ const urlsToCache = [
     "/main.js",
     "/img/*",
     "/img/background.webp",
-    "/img/background2.webp"
+    "/img/background2.webp",
+    "/img/about768.webp",
+    "/img/about768.webp"
 ];
 
 // Install event: Cache assets
