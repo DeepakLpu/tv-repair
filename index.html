@@ -11,6 +11,10 @@
     <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
 <link rel="preload" fetchpriority="high" as="image" href="/img/background.webp" type="image/webp">
 <link rel="preload" fetchpriority="high" as="image" href="/img/background2.webp" type="image/webp">
+
+
+<link rel="manifest" href="/manifest.json">
+
     
 
     <!-- Preload the main script -->
@@ -106,7 +110,11 @@
                 <p>&copy; 2023 TV Repair Shop. All Rights Reserved.</p>
             </div>
         </div>
+
     </footer>
+    <div id="sw-status"></div>
     <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script src="service-worker.js"></script>
 </body>
 </html>

@@ -10,10 +10,12 @@ const urlsToCache = [
     "/style.css",
     "/app.js",
     "/main.js",
-    "/img/*"
+    "/img/*",
+    "/img/background.webp",
+    "/img/background2.webp"
 ];
 
-// Install event: Caches the assets
+// Install event: Cache assets
 self.addEventListener("install", (event) => {
     console.log('Service Worker: Installing...');
     event.waitUntil(
@@ -75,12 +77,10 @@ self.addEventListener("fetch", (event) => {
                     })
                     .catch((error) => {
                         console.error('Service Worker: Fetch failed', error);
-                        // Optional: return custom offline response
                     });
             })
     );
 });
-
 
 // Activate event: Clean up old caches
 self.addEventListener("activate", (event) => {
@@ -100,6 +100,6 @@ self.addEventListener("activate", (event) => {
             .then(() => {
                 console.log('Service Worker: Activated');
                 return self.clients.claim(); // Take control immediately
-            })
-    );
+            })
+    );
 });
